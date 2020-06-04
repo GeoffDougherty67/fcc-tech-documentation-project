@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: white;
+      }
+
+      .header h1 {
+        font-size: 50px;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 25%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 75%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <nav class="topnav" id="navbar">
+            <header></header>
+
+            <a href="#What_Kind" class="nav-link">
+              What Kind of Cocktail
+            </a>
+            <a href="#Choose_Ingredients" class="nav-link">
+              Choose Ingredients
+            </a>
+            <a href="#Make_Substitutions" class="nav-link">
+              Make Substitutions
+            </a>
+            <a href="#Tweak_Ingredients" class="nav-link">
+              Tweak Ingredients
+            </a>
+            <a href="#Keep_It_Simple" class="nav-link">
+              Keep It Simple
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="rightcolumn">
+
+        <div class="header">
+          <h1>How to Make Your Own Cocktail</h1>
+        </div>
+        <main id="main-doc">
+
+          <div class="card">
+            <section class="main-section" id="What_Kind">
+              <header>What kind of cocktail?</header>
+              <code>Decide what you what your cocktail will taste and look like.</code>
+              <ol>
+                <li>Who is it for?</li>
+                <li>When is it for?</li>
+                <li>How rare are the ingredients?</li>
+                <li>How does it look?</li>
+                <li>How is it prepared?</li>
+              </ol>
+              <p>All these factors are important to consider when designing a cocktail.  The order that they should be considered will depend on the specific circumstances of each creation.</p>
+              <p>For instance if the cocktail is designed specifically to feature in a contest, rare ingredients may be perferred.  However if the cocktail is being created for a dive bare with a dancefloor, you will want to work with ingredients already available or very easily obtained.</p>
+            </section>
+          </div>
+          <div class="card">
+            <section class="main-section" id="Choose_Ingredients">
+              <header>Choose Ingredients</header>
+              <code>The most essential consideration of all. </code>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </section>
+          </div>
+          <div class="card">
+            <section class="main-section"  id="Make_Substitutions">
+              <header>Make Substitutions</header>
+              <code>quis nostrud exercitation ullamco</code>
+              <p>Seunt in culpae qui oifficia deseruuunt mollit aneim id eeist labeorum coensectetur.</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </section>
+          </div>
+          <div class="card">
+            <section class="main-section"  id="Tweak_Ingredients">
+              <header>Tweak Ingredients</header>
+              <code>There's a good chance you bleh bloo blah</code>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </section>
+          </div>
+          <div class="card">
+            <section class="main-section" id="Keep_It_Simple">
+              <header>Keep It Simple</header>
+              <code>Tquis nostrud exercitation ullamco.</code>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
